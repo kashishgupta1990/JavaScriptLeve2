@@ -1,4 +1,4 @@
-function databaseAccess() {
+function databaseAccess(callback) {
 
     var data = {
         status: true,
@@ -9,10 +9,14 @@ function databaseAccess() {
     setTimeout(function () {
         console.log('Some internal processing...');
         data.count = 100;
+        callback(data);
     }, 5000);
 
-    return data;
+
 }
 
-var userStatus = databaseAccess();
-console.log(userStatus);
+var userData;
+databaseAccess(function (user) {
+    userData = user;
+    console.log(userData);
+});

@@ -1,8 +1,13 @@
 var obj1 = {};
 console.log('1> ', obj1);
 
-var obj2 = new Object();
+var obj2
 console.log('2> ', obj2);
 
-var person = {name: 'Kashish', age: '24'};
+var dontKw = 'name';
+var person = {age: '24'};
+person[dontKw] = 'kashish';
+
 console.log('3> ', person);
+
+

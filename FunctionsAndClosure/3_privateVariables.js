@@ -3,6 +3,7 @@ function Person() {
 
     return {
         getName: function () {
+            var _yo
             return _name;
         },
         setName: function (name) {
@@ -13,6 +14,6 @@ function Person() {
 
 var kashish = Person();
 
-console.log(kashish.getName());
+console.log(kashish.getName()); //undefin
 kashish.setName('Kashish');
-console.log(kashish.getName());
+console.log(kashish.getName()); //kashi

@@ -9,8 +9,8 @@ var person = {
 
 //console.log(global);
 
-global.firstName = "Sheena";
-global.lastName = "Gupta";
+//global.firstName = "Sheena";
+//global.lastName = "Gupta";
 var fullName = person.fullName;
 
 fullName();

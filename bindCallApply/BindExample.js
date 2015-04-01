@@ -20,7 +20,7 @@ var user = {
 user.showData(1);
 
 /*Here we are trying to Borrow showData method*/
-/*var teacher = {
+var teacher = {
     data: [
         {
             name: 'Alok Ji',
@@ -31,12 +31,10 @@ user.showData(1);
             age: 55
         }
     ]
-};*/
+};
 
 //Here a copy of method is assign to "printData" variable.
-//var printData = user.showData.bind(teacher);
+var printData = user.showData.bind(teacher);
 
-/*
 console.log(printData + '');
 printData(0);
-*/
